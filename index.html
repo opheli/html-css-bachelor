@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Agency</title>
+
+    <!-- Local -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+</head>
+
+<body>
+    <header>
+        <div class="background--travel--agency">
+
+            <nav class="navbar">
+
+
+                <div class="navbar--brand">
+
+                    <img src="./assets/images/plane.png" alt="Logo Travel Agency" title="Logo Travel Agency" />
+
+                    <h2>
+                        <a class="title--brand" href="#">TRAVEL AGENCY</a>
+                    </h2>
+
+                    <a href="#" class="toggle--button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+
+                </div>
+
+                <div class="navbar--links">
+                    <ul>
+                        <li>
+                            <a id="orange" href="#home">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#destinations">Destinations</a>
+                        </li>
+
+                        <li>
+                            <a href="#deals">Deals</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+    </header>
+
+    <article>
+
+        <div class="form--image--group">
+
+            <form action="" method="POST" class="form--holidays--group">
+
+                <h3>Find your holiday</h3>
+
+                <div class="form--holidays">
+
+                    <div>
+                        <label for="from">From : </label>
+                        <input type="text" name="from" id="from" placeholder=" Paris" required />
+                    </div>
+
+                    <div>
+                        <label for="To">To : </label>
+                        <input type="text" name="to" id="to" placeholder=" Malte" required />
+                    </div>
+
+                </div>
+
+                <div class="form--holidays">
+
+                    <div>
+                        <label for="time">Date : </label>
+                        <input type="date" name="date" id="date" placeholder=" 04/11/2018" value="2018-11-04"
+                            min="2018-11-04" max="2022-12-31" required />
+                    </div>
+
+                    <div>
+                        <label for="duration">Duration : </label>
+                        <select name="duration" id="duration" required />
+                        <option value="3 days" selected>3 days</option>
+                        <option value="5 days">5 days</option>
+                        <option value="7 days">7 days</option>
+                        <option value="10 days">10 days</option>
+                        <option value="15 days">15 days</option>
+                        </select>
+                    </div>
+
+                    <div class="button--find">
+                        <button type="submit">Find !</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="image--top">
+
+                <img class="image--top--image" src="./assets/images/amsterdam.jpg" alt="Amsterdam" title="Amsterdam" />
+
+                <div class="image--top--text">
+
+                    <h4>Deal of the day</h4>
+
+                    <div class="image--top--botton">
+                        <div>
+                            <h3 class="image--top--botton--title">Amsterdam</h3>
+                            <p class="image--top--botton--text">Hotel Calypso</p>
+                            <p class="image--top--botton--text">1 week</p>
+                        </div>
+
+                        <div>
+                            <h4 class="image--top--price">150 €</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    </div>
+
+
+
+    <footer class="">
+        <div class="container">
+            <div class="container--image">
+                <div>
+                    <img src="./assets/images/calculator.png" alt="Logo Cui'zine" />
+                </div>
+                <div>
+                    <img src="./assets/images/discount.png" alt="Logo Cui'zine" />
+                </div>
+                <div>
+                    <img src="./assets/images/" alt="Logo Cui'zine" />
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <h3>Archives</h3>
+                <ul>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">2017</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <h6>Newsletter</h6>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" />
+                    <button class="btn btn-outline-light" type="button" id="button-addon2">
+                        S'inscrire
+                    </button>
+                </div>
+
+                <h6>Partager</h6>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="javascript/script.js" defer></script>
+</body>
+
+</html>
