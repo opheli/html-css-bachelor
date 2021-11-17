@@ -1,0 +1,88 @@
+.container--image {
+    margin-top: 50px;
+    height: 120px;
+    width: 100%;
+    background-color: #004e66;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.container--image p {
+   font-weight: 550;
+   padding-top: 10px;
+   color:white;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 700px;
+    margin: 50px 0px 10px;
+}
+
+.container--info p {
+    font-size: 15px;
+    padding: 3px;
+}
+
+.container--image--picto {
+    height: 60px;
+    width: auto;
+}
+
+.container--orange {
+    height: 30px;
+    width: 100%;
+    background-color: #FF6600;
+}
+
+.container--info {
+    height: 200px;
+    width: 100%;
+    background-color: #e1eef6;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#phone-number {
+    font-size: 30px;
+    font-weight: 700px;
+}
+
+.container--info a {
+    text-decoration: none;
+    color : #004e66;
+    line-height: 1.2;
+}
+
+.container--info--links a{
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .container--image {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .container--image div {
+        width: 40%;
+        margin: 5%;
+    }
+    
+    .container--info {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #phone-number {
+        padding-bottom: 20px;
+    }
+}

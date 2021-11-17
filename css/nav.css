@@ -38,13 +38,12 @@
 }
 
 .navbar--links li:hover {
-    background-color : #0277BD;
+    background-color : #e1eef6;
 }
 
 #orange {
     color: #FF6600;
 }
-
 
 .toggle--button {
     position: absolute;
@@ -64,7 +63,7 @@
     border-radius: 10px;
 }
 
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
     .toggle--button {
         display: flex;
     }
