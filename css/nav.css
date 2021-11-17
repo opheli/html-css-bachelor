@@ -13,6 +13,7 @@
 
 .title--brand {
     padding: 20px;
+    font-weight: bold;
     text-decoration: none;
     color : #004e66;
     list-style: none;
@@ -46,9 +47,6 @@
 }
 
 .toggle--button {
-    position: absolute;
-    top: 75;
-    right: 1rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -64,29 +62,40 @@
 }
 
 @media only screen and (max-width: 990px) {
+
     .toggle--button {
         display: flex;
     }
+
     .navbar--links {
         display: none;
         width: 100%;
     }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start ; 
     }
+
     .navbar--links ul {
         width: 100%;
         flex-direction: column;
     }
+
     .navbar--links li {
         text-align: center;
     }
+
     .navbar--links li a{
         padding: .10em 1em;
     }
+
     .navbar--links.active {
         display: flex;
         padding-bottom: 50px;
     }
+    .navbar--brand img {
+        margin: 0px 50px;
+    }
+
 }

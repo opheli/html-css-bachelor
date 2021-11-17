@@ -1,3 +1,8 @@
+.form--image--group h3 {
+    font-size: 19px;
+    padding: 10px 0 0 10px;
+}
+
 label {
     display:block;  
     margin: 1px;
@@ -42,7 +47,6 @@ select
     border-width: 2px;
     border-style: solid;
     border-color: #ff5f2e;
-    /* border: 2px; */
 }
 
 label {
@@ -59,9 +63,10 @@ button {
     
 }
 
+
 .image--top {
     position: relative;
-    height: 365px;
+    height: 320px;
     width: 100%;
     margin-left: 20px;
     font-weight: bold;
@@ -72,7 +77,7 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    height: 365px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
@@ -86,22 +91,37 @@ button {
     height: 100%;
 }
 
-
 .image--top--botton {
     display: flex;
     justify-content: space-between;
     padding-left: 10px;  
 }
 
-.image--top--price {
+.image--top--text h4 {
+    font-size: 28px;
+    margin: 20px 0px 0px 15px;
+}
+
+.image--top--botton h5 {
+    font-size: 28px;
+    margin-left: 1px;
+    line-height: 1.6;
+}
+
+.image--top--botton--text {
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.image--top--botton div {
+    margin: 0px 0px 30px 15px;
+}
+
+#image--top--price {
     margin-right: 0px;
     padding: 5px;
     background-color: #fcbe32;
-}--
- 
-h3 {
-    font-size: 28px;
-    padding-left: 10px;
+    font-style: normal;
 }
 
 @media only screen and (max-width: 990px) {
@@ -109,6 +129,7 @@ h3 {
     body {
         margin: auto;
     }
+
     .form--image--group {
         display: block;
         width: 100%;
@@ -124,6 +145,7 @@ h3 {
        width: 90%;
        margin: 10px;
     }
+    
 
     select {
         width: 90%;
@@ -162,8 +184,18 @@ h3 {
         position: absolute;
         background: rgba(255,255,255,0.5)
     }
+
     .image--top {
         margin-left: 0px;
     }
+
+}
+
+
+
+/* destinations */
+
+
+@media only screen and (max-width: 990px) {
 
 }
