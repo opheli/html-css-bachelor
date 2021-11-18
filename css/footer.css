@@ -1,3 +1,5 @@
+/* footer partie 1 picto */
+
 .container--image {
     margin-top: 50px;
     height: 120px;
@@ -8,11 +10,15 @@
     align-items: center;
     text-align: center;
 }
+
 .container--image p {
    font-weight: 550;
    padding-top: 10px;
    color:white;
 }
+
+
+/* footer partie 2 */
 
 h6 {
     font-size: 20px;

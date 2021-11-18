@@ -1,3 +1,5 @@
+/* partie  formulaire */
+
 .form--image--group h3 {
     font-size: 19px;
     padding: 10px 0 0 10px;
@@ -5,7 +7,7 @@
 
 label {
     display:block;  
-    margin: 1px;
+    margin: 1px 1px 1px 10px;
 }
 
 input {
@@ -14,12 +16,39 @@ input {
     margin: 10px;
     border-style: solid;
     border-color: #ff5f2e;
+    -webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;  /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+select
+{
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ff5f2e;
+    -webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;  /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+button {
+    background-color: #ff5f2e;
+    border: none;
+    border-radius: 2px;
+    width: 130px;
+    height: 30px;
+    color: white;
+    -webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;  /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
 }
 
 .form--image--group {
     display: flex;
     justify-content: space-around;
-
 }
 
 .form--holidays--group {
@@ -39,30 +68,8 @@ input {
     margin-left: -140px;
 }
 
-select
-{
-    width: 250px;
-    height: 40px;
-    margin: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #ff5f2e;
-}
 
-label {
-    margin-left: 10px;
-}
-
-button {
-    background-color: #ff5f2e;
-    border: none;
-    border-radius: 2px;
-    width: 130px;
-    height: 30px;
-    color: white;
-    
-}
-
+/* texte partie  photo deal */
 
 .image--top {
     position: relative;
@@ -73,6 +80,9 @@ button {
     background: rgba(255,255,255,0.5)
 }
 
+
+/* photo partie photo deal */
+
  .image--top--image {
     position: absolute;
     top: 0;
@@ -82,6 +92,9 @@ button {
     object-fit: cover;
     z-index: -1;
 }
+
+
+/* texte sur photo partie photo deal */
 
 .image--top--text {
     display: flex;
@@ -124,6 +137,7 @@ button {
     font-style: normal;
 }
 
+
 @media only screen and (max-width: 990px) {
 
     body {
@@ -142,11 +156,10 @@ button {
     }
     
     .button--find {
-       width: 90%;
+       width: 100%;
        margin: 10px;
     }
     
-
     select {
         width: 90%;
         margin: 10px;
@@ -164,10 +177,9 @@ button {
     }
 
     button {
-        border-radius: 2px;
-        margin: 10px;
         width: 90%;
-        height: 30px;
+        border-radius: 2px;
+        margin: 10px 0px; 
         -webkit-box-sizing: border-box;  /* Safari/Chrome, other WebKit */
         -moz-box-sizing: border-box;  /* Firefox, other Gecko */
         box-sizing: border-box; /* Opera/IE 8+ */
@@ -188,14 +200,138 @@ button {
     .image--top {
         margin-left: 0px;
     }
-
 }
+
+
+
 
 
 
 /* destinations */
 
+/* texte photos destination */
+
+h1 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.destinations--text {
+    color: #ff5f2e;
+    font-size: 24px;
+}
+
+.destinations--text h4{
+    padding: 10px 0px 0px 20px;
+}
+
+.destinations--botton{
+    padding: 0px 0px 10px 20px;
+}
+
+.destinations--right--price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 30px;
+}
+
+.destinations--right--price h4{
+    font-size: 20px;
+    margin-right: 0px;
+    padding: 5px;
+    background-color: #fcbe32;
+    font-style: normal;
+    color: #2f3030;
+}
+
+.destinations--botton--text {
+    font-size: 15px;
+    line-height: 1.2;
+    font-style: italic;
+    color: #2f3030;
+}
+
+.destinations--text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.destinations--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* photos destination */
+
+.destinations{
+    position: relative;
+    height: 220px;
+    width: 21%;
+    font-weight: bold;
+    background: rgba(255,255,255,0.5);
+    margin-top: 20px;
+}
+
+.destinations--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container--destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#button--see {
+    width: 300px;
+    height: 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: #ff5f2e;
+}
+
+
 
 @media only screen and (max-width: 990px) {
 
+    .destinations--image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;  
+    }
+
+    .destinations {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .container--destinations {
+        flex-direction: column;
+    }
+
+    button,  #button--see {
+        text-align: center;
+        width: 90%;
+        padding: 0px;
+    }
+
+    .destinations--button {
+        text-align: center;
+    }
 }
