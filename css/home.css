@@ -69,7 +69,7 @@ button {
 }
 
 
-/* texte partie  photo deal */
+/* texte partie photo deal */
 
 .image--top {
     position: relative;
@@ -129,6 +129,7 @@ button {
 .image--top--botton div {
     margin: 0px 0px 30px 15px;
 }
+
 
 #image--top--price {
     margin-right: 0px;
@@ -228,6 +229,10 @@ h1 {
     padding: 10px 0px 0px 20px;
 }
 
+.destinations--left {
+    white-space: nowrap;
+}
+
 .destinations--botton{
     padding: 0px 0px 10px 20px;
 }
@@ -236,6 +241,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    white-space: nowrap;
     position: relative;
     bottom: 30px;
 }
