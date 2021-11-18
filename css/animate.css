@@ -1,0 +1,45 @@
+.plane {
+    position: relative;
+    animation: bouce 10.20s ease infinite;
+}
+
+@keyframes bouce {
+    from {
+        top: 0px;
+        left: 0px;
+        transform: rotate(35deg);
+    }
+    10% {
+        top: -45px;
+        left: 400px;
+    }
+
+    15% {
+        top: -50px;
+        left: 400px;
+
+    }
+    
+    18% {
+        top:-50px;
+        left: 1540px;
+        transform: rotate(35deg);
+    }
+    20% {
+        top:-50px;
+        left: 1540px;
+        transform: rotate(190deg);
+    }
+    
+    95% {
+        top: 275px;
+        left: 520px;
+        transform: rotate(190deg);
+    }
+    to {
+        top: 275px;
+        left: 520px;
+        transform: rotate(190deg);
+    }
+}
+
